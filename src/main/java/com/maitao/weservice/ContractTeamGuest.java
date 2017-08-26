@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Calendar;
+import java.util.Date;
 
 
 /**
@@ -65,9 +66,9 @@ public class ContractTeamGuest {
     protected String idcode;
     protected String idfrom;
     @XmlSchemaType(name = "dateTime")
-    protected Calendar idstartdate;
+    protected Date idstartdate;
     @XmlSchemaType(name = "dateTime")
-    protected Calendar idenddate;
+    protected Date idenddate;
     @XmlElement(required = true)
     protected String name;
     protected String familyname;
@@ -75,7 +76,7 @@ public class ContractTeamGuest {
     @XmlElement(required = true)
     protected String sex;
     @XmlSchemaType(name = "dateTime")
-    protected Calendar birthday;
+    protected Date birthday;
     protected String nation;
     protected String folk;
     protected String mobile;
@@ -161,7 +162,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public Calendar getIdstartdate() {
+    public Date getIdstartdate() {
         return idstartdate;
     }
 
@@ -173,7 +174,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setIdstartdate(Calendar value) {
+    public void setIdstartdate(Date value) {
         this.idstartdate = value;
     }
 
@@ -185,7 +186,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public Calendar getIdenddate() {
+    public Date getIdenddate() {
         return idenddate;
     }
 
@@ -197,7 +198,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setIdenddate(Calendar value) {
+    public void setIdenddate(Date value) {
         this.idenddate = value;
     }
 
@@ -305,7 +306,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public Calendar getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
@@ -317,7 +318,7 @@ public class ContractTeamGuest {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setBirthday(Calendar value) {
+    public void setBirthday(Date value) {
         this.birthday = value;
     }
 

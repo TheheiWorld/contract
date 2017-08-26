@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 
@@ -70,10 +71,10 @@ public class ContractTeam {
     protected Integer nights;
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
-    protected Calendar bgndate;
+    protected Date bgndate;
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
-    protected Calendar enddate;
+    protected Date enddate;
     protected int qty;
     protected String optype;
     protected String startcity;
@@ -183,7 +184,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public Calendar getBgndate() {
+    public Date getBgndate() {
         return bgndate;
     }
 
@@ -195,7 +196,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setBgndate(Calendar value) {
+    public void setBgndate(Date value) {
         this.bgndate = value;
     }
 
@@ -207,7 +208,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public Calendar getEnddate() {
+    public Date getEnddate() {
         return enddate;
     }
 
@@ -219,7 +220,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setEnddate(Calendar value) {
+    public void setEnddate(Date value) {
         this.enddate = value;
     }
 
