@@ -1,14 +1,11 @@
 
 package com.maitao.weservice;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 
 /**
@@ -73,10 +70,10 @@ public class ContractTeam {
     protected Integer nights;
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar bgndate;
+    protected Calendar bgndate;
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar enddate;
+    protected Calendar enddate;
     protected int qty;
     protected String optype;
     protected String startcity;
@@ -186,7 +183,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public XMLGregorianCalendar getBgndate() {
+    public Calendar getBgndate() {
         return bgndate;
     }
 
@@ -198,7 +195,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setBgndate(XMLGregorianCalendar value) {
+    public void setBgndate(Calendar value) {
         this.bgndate = value;
     }
 
@@ -210,7 +207,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public XMLGregorianCalendar getEnddate() {
+    public Calendar getEnddate() {
         return enddate;
     }
 
@@ -222,7 +219,7 @@ public class ContractTeam {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public void setEnddate(XMLGregorianCalendar value) {
+    public void setEnddate(Calendar value) {
         this.enddate = value;
     }
 
