@@ -21,8 +21,8 @@ public class WebServiceTest {
     @Test
     public void authenticationOTA () {
 
-        String code = "goldpalm-a1";
-        String password = "bb33374d29ccdc19ad634401f332da75";
+        String code = "";
+        String password = "";
 
         String result = service.authenticationOTA(code, password);
         ResponseResult responseResult = JSON.parseObject(result, ResponseResult.class);
